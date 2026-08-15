@@ -13,8 +13,11 @@ export const enContent: ClinicContent = {
     specialities: "Specialities",
     about: "About Clinic",
     contact: "Contact & Location",
+    headerTitle: "Jayakanthan Homeopathy",
     callAppointment: "Call for Appointment",
-    getDirections: "Tap for Map Route"
+    getDirections: "Tap for Map Route",
+    stickyCall: "Call Now",
+    stickyDirections: "Directions"
   },
 
   hero: {
@@ -22,7 +25,7 @@ export const enContent: ClinicContent = {
     title: "Jayakanthan Homeopathy Clinic",
     subtext: "Gentle, natural, and holistic homeopathic healthcare in Perundurai under the expert guidance of Dr. N. Jayakanthan.",
     callAction: "Call for Appointment",
-    directionsAction: "Tap for Google Maps Directions",
+    directionsAction: "Tap for Map Route",
     consultingTimeNotice: "Consulting Hours: Daily 10:00 AM to 05:00 PM"
   },
 
@@ -59,7 +62,7 @@ export const enContent: ClinicContent = {
     phoneHeader: "Appointment Phone Numbers",
     hoursHeader: "Consulting Hours",
     appointmentHeader: "Appointment Requirement",
-    getDirectionsBtn: "📍 Tap Here to Open Google Maps",
+    getDirectionsBtn: "Tap for Google Maps Directions",
     callBtn: "Call Now"
   },
 

@@ -11,22 +11,22 @@ export const MobileStickyBar: React.FC = () => {
     <div className="mobile-sticky-bar" role="region" aria-label="Quick Mobile Actions">
       <a
         href="tel:+919442726598"
-        className="btn btn-primary"
+        className="btn btn-primary sticky-action-btn"
         aria-label={`${content.nav.callAppointment}: 94427 26598`}
       >
-        <Phone size={18} />
-        <span>{content.nav.callAppointment}</span>
+        <Phone size={20} style={{ flexShrink: 0 }} />
+        <span>{content.nav.stickyCall}</span>
       </a>
 
       <a
         href={mapsUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="btn btn-outline"
+        className="btn btn-outline sticky-action-btn"
         aria-label={content.nav.getDirections}
       >
-        <MapPin size={18} />
-        <span>{content.nav.getDirections}</span>
+        <MapPin size={20} style={{ flexShrink: 0 }} />
+        <span>{content.nav.stickyDirections}</span>
       </a>
     </div>
   );

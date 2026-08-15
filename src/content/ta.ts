@@ -13,8 +13,11 @@ export const taContent: ClinicContent = {
     specialities: "சிகிச்சைகள்",
     about: "மருத்துவமனை பற்றி",
     contact: "தொடர்பு & முகவரி",
+    headerTitle: "ஜெயகாந்தன் ஹோமியோபதி",
     callAppointment: "முன்பதிவு செய்ய அழைக்கவும்",
-    getDirections: "கூகுள் மேப் வழி"
+    getDirections: "கூகுள் மேப் வழி",
+    stickyCall: "அழைக்க",
+    stickyDirections: "வழி பார்க்க"
   },
 
   hero: {
@@ -22,7 +25,7 @@ export const taContent: ClinicContent = {
     title: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
     subtext: "பெருந்துறையில் 42 ஆண்டுகளுக்கும் மேலாக டாக்டர் N. ஜெயகாந்தன் அவர்களின் தலைமையில் இயற்கையான, பக்கவிளைவில்லாத அசல் தூய ஹோமியோபதி சிகிச்சை வழங்கப்படுகிறது.",
     callAction: "முன்பதிவு செய்ய அழைக்கவும்",
-    directionsAction: "📍 கூகுள் மேப்பில் வழி பார்க்க இங்கே தொடவும்",
+    directionsAction: "கூகுள் மேப் வழி பெற",
     consultingTimeNotice: "பார்வை நேரம்: தினமும் காலை 10:00 - மாலை 05:00"
   },
 
@@ -59,7 +62,7 @@ export const taContent: ClinicContent = {
     phoneHeader: "முன்பதிவுக்கான தொலைபேசி எண்கள்",
     hoursHeader: "பார்வை நேரம்",
     appointmentHeader: "முன்பதிவு விதிமுறை",
-    getDirectionsBtn: "📍 கூகுள் மேப்பில் வழி பார்க்க இங்கே தொடவும்",
+    getDirectionsBtn: "கூகுள் மேப் வழி பார்க்க",
     callBtn: "உடனே அழைக்க"
   },
 

@@ -27,8 +27,11 @@ export interface ClinicContent {
     specialities: string;
     about: string;
     contact: string;
+    headerTitle: string;
     callAppointment: string;
     getDirections: string;
+    stickyCall: string;
+    stickyDirections: string;
   };
 
   hero: {
