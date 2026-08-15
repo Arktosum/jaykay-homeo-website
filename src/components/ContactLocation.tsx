@@ -5,7 +5,7 @@ import { MapPin, Phone, Navigation, ExternalLink, Info, Building, Compass } from
 export const ContactLocation: React.FC = () => {
   const { content } = useLanguage();
 
-  const mapsUrl = "https://maps.google.com/?q=Jayakanthan+Homeopathy+Clinic+39/24+Ganapathi+Nagar+Iyar+Amma+Park+near+R.S.+Road+Perundurai+638052+Erode+District+Tamil+Nadu";
+  const mapsUrl = "https://maps.google.com/?q=Jayakanthan+Homeopathy+Clinic+39/24+Ganapathi+Nagar+Amma+Iyer+Kulam+Park+near+R.S.+Road+Perundurai+638052+Erode+District+Tamil+Nadu";
   const addr = content.contactSection.addressDetails;
 
   return (
@@ -76,7 +76,7 @@ export const ContactLocation: React.FC = () => {
               <address className="address-card-body">
                 <div className="address-doctor-header">
                   <span className="address-doctor-name">{addr.doctor}</span>
-                  <span className="address-doctor-tag">{content.doctorName} • Homeopathic Physician</span>
+                  <span className="address-doctor-tag">Homeopathic Physician</span>
                 </div>
 
                 <div className="address-line-item">

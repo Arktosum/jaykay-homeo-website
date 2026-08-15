@@ -64,7 +64,7 @@ export const enContent: ClinicContent = {
     fullAddress: [
       "Jayakanthan Homeopathy Clinic",
       "39/24 Ganapathi Nagar",
-      "Iyar Amma Park near",
+      "Amma Iyer Kulam Park near",
       "R.S. Road",
       "Perundurai",
       "638 052",
@@ -74,7 +74,7 @@ export const enContent: ClinicContent = {
     addressDetails: {
       doctor: "Jayakanthan Homeopathy Clinic",
       building: "39/24 Ganapathi Nagar",
-      street: "Near Iyar Amma Park, R.S. Road",
+      street: "Near Amma Iyer Kulam Park, R.S. Road",
       cityPincode: "Perundurai – 638 052",
       districtState: "Erode District, Tamil Nadu"
     },
