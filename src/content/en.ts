@@ -22,8 +22,8 @@ export const enContent: ClinicContent = {
 
   hero: {
     badge: "42 Years of Experience",
-    title: "Jayakanthan Homeopathy Clinic",
-    subtext: "High class original pure homeopathy of 42 years of experience by Dr.N.Jayakanthan in Perundurai.",
+    title: "Pure Homeopathic Healing & Care",
+    subtext: "Providing gentle, natural, and individual homeopathic medical treatment in Perundurai with over four decades of trusted clinical experience.",
     callAction: "Call for Appointment",
     directionsAction: "Get Directions",
     consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM"
