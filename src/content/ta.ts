@@ -87,12 +87,13 @@ export const taContent: ClinicContent = {
 
   disclaimer: {
     title: "தகவல் அறிவிப்பு",
-    text: "ஹோமியோபதி சிகிச்சைகள் நபருக்கு நபர் மாறுபடும். முறையான மருத்துவ ஆலோசனைக்கு Dr.N.Jayakanthan அவர்களை நேரடியாக கிளினிக்கில் சந்திக்கவும்."
+    text: "ஹோமியோபதி சிகிச்சைகள் நபருக்கு நபர் மாறுபடும். முறையான மருத்துவ ஆலோசனைக்கு Dr.N.Jayakanthan அவர்களை напрямую கிளினிக்கில் சந்திக்கவும்."
   },
 
   footer: {
     copyright: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
-    tagline: "பெருந்துறையில் 1982 முதல் குடும்பங்களுக்கான பக்கவிளைவில்லாத அசல் ஹோமியோபதி மருத்துவ சேவை."
+    tagline: "பெருந்துறையில் 1982 முதல் குடும்பங்களுக்கான பக்கவிளைவில்லாத அசல் ஹோமியோபதி மருத்துவ சேவை.",
+    pageViewsLabel: "மொத்தப் பார்வைகள்"
   },
 
   categories: [
@@ -191,7 +192,7 @@ export const taContent: ClinicContent = {
       enTitle: "Hair & Skin Care",
       taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
-        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுгу முடி உதிர்தல் நரை முடி" },
+        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
       ]
     },

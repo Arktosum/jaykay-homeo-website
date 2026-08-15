@@ -92,7 +92,8 @@ export const enContent: ClinicContent = {
 
   footer: {
     copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
-    tagline: "Dedicated to gentle, natural, and individual homeopathic care in Perundurai since 1982."
+    tagline: "Dedicated to gentle, natural, and individual homeopathic care in Perundurai since 1982.",
+    pageViewsLabel: "Total Page Views"
   },
 
   categories: [
@@ -191,7 +192,7 @@ export const enContent: ClinicContent = {
       enTitle: "Hair & Skin Care",
       taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
-        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
+        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுгу முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
       ]
     },

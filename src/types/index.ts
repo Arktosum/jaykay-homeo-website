@@ -98,6 +98,7 @@ export interface ClinicContent {
   footer: {
     copyright: string;
     tagline: string;
+    pageViewsLabel: string;
   };
 
   categories: SpecialityCategory[];

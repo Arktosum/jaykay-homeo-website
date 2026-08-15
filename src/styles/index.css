@@ -724,10 +724,28 @@ img, svg {
   line-height: 1.6;
 }
 
+.page-view-counter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.85rem;
+  font-size: clamp(0.78rem, 1.8vw, 0.88rem);
+  color: #a7f3d0;
+  margin: 0.4rem 0;
+}
+
+.view-icon {
+  color: #a7f3d0;
+  flex-shrink: 0;
+}
+
 .footer-copyright {
   font-size: clamp(0.78rem, 1.8vw, 0.88rem);
   color: #cbd5e1;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 /* Mobile Sticky Action Bar */
