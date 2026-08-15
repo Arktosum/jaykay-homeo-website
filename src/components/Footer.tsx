@@ -9,10 +9,8 @@ export const Footer: React.FC = () => {
     <footer className="site-footer" role="contentinfo">
       <div className="container footer-inner">
         <h2 className="footer-title">{content.clinicName}</h2>
-        <p style={{ fontSize: '0.95rem', maxWidth: '600px', color: 'var(--neutral-400)' }}>
-          {content.footer.tagline}
-        </p>
-        <p style={{ fontSize: '0.85rem', color: 'var(--neutral-500)', marginTop: '0.5rem' }}>
+        <p className="footer-sub">{content.footer.tagline}</p>
+        <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', marginTop: '0.25rem' }}>
           © {year} {content.footer.copyright}
         </p>
       </div>
