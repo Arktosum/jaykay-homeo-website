@@ -95,7 +95,7 @@ img, svg {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1.25rem;                 /* 20px Gutter Margin on both left & right */
+  padding: 0 1.5rem;                  /* 24px Generous Side Margin on mobile */
 }
 
 .section-padding {
@@ -104,7 +104,7 @@ img, svg {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 2rem;                  /* 32px Side Margin on desktop */
+    padding: 0 2.25rem;               /* 36px Side Margin on desktop */
   }
   .section-padding {
     padding: 4rem 0;
@@ -176,7 +176,7 @@ img, svg {
   min-height: 58px;
 }
 
-/* Site Header - Top Nav Bar with Full Horizontal Margins & Zero Ellipsis */
+/* Site Header - Top Nav Bar with 24px Horizontal Margin Padding */
 .site-header {
   position: sticky;
   top: 0;
@@ -190,19 +190,22 @@ img, svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 0;
-  gap: 0.85rem;
+  padding: 0.85rem 1.5rem;             /* Explicit 24px left and right padding inside top nav */
+  gap: 1rem;
   min-height: 64px;
+  max-width: var(--container-max);
+  margin: 0 auto;
 }
 
 .brand-info {
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+  padding-right: 0.5rem;
 }
 
 .brand-name {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 800;
   color: var(--color-text-main);
   line-height: 1.25;
