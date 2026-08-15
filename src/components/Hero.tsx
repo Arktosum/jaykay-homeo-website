@@ -21,10 +21,6 @@ export const Hero: React.FC = () => {
               {content.hero.title}
             </h1>
 
-            <div className="hero-doctor-name">
-              {content.doctorName}
-            </div>
-
             <p className="hero-subtext">
               {content.hero.subtext}
             </p>
@@ -65,9 +61,14 @@ export const Hero: React.FC = () => {
                 <Calendar size={20} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
                 <span>{content.infoCards.appointmentText}</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginTop: '0.25rem' }}>
-                <Phone size={20} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
-                <a href="tel:+919442726598" style={{ fontWeight: 700, color: 'var(--color-action)' }}>+91 94427 26598</a>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginTop: '0.25rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                  <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                  <a href="tel:+919442726598" style={{ fontWeight: 700, color: 'var(--color-action)' }}>+91 94427 26598</a>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', paddingLeft: '1.75rem' }}>
+                  <a href="tel:+918300948421" style={{ fontWeight: 700, color: 'var(--color-action)' }}>+91 83009 48421</a>
+                </div>
               </div>
             </div>
           </div>

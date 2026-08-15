@@ -76,7 +76,7 @@ export const ContactLocation: React.FC = () => {
               <address className="address-card-body">
                 <div className="address-doctor-header">
                   <span className="address-doctor-name">{addr.doctor}</span>
-                  <span className="address-doctor-tag">Homeopathic Physician</span>
+                  <span className="address-doctor-tag">{content.doctorName} • Homeopathic Physician</span>
                 </div>
 
                 <div className="address-line-item">

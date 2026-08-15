@@ -29,6 +29,15 @@ export const enContent: ClinicContent = {
     consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM"
   },
 
+  stats: {
+    yearsValue: "42+",
+    yearsLabel: "Years of Medical Practice",
+    patientsValue: "10,000+",
+    patientsLabel: "Trusted Patients Treated",
+    specialitiesValue: "20+",
+    specialitiesLabel: "Specialized Treatment Services"
+  },
+
   infoCards: {
     hoursTitle: "Consulting Hours",
     hoursValue: "10:00 AM – 05:00 PM",
@@ -53,7 +62,7 @@ export const enContent: ClinicContent = {
     title: "Contact & Location Details",
     addressHeader: "Clinic Address",
     fullAddress: [
-      "Dr.N.Jayakanthan",
+      "Jayakanthan Homeopathy Clinic",
       "39/24 Ganapathi Nagar",
       "Iyar Amma Park near",
       "R.S. Road",
@@ -63,7 +72,7 @@ export const enContent: ClinicContent = {
       "Tamil Nadu"
     ],
     addressDetails: {
-      doctor: "Dr.N.Jayakanthan",
+      doctor: "Jayakanthan Homeopathy Clinic",
       building: "39/24 Ganapathi Nagar",
       street: "Near Iyar Amma Park, R.S. Road",
       cityPincode: "Perundurai – 638 052",

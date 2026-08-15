@@ -43,6 +43,15 @@ export interface ClinicContent {
     consultingTimeNotice: string;
   };
 
+  stats: {
+    yearsValue: string;
+    yearsLabel: string;
+    patientsValue: string;
+    patientsLabel: string;
+    specialitiesValue: string;
+    specialitiesLabel: string;
+  };
+
   infoCards: {
     hoursTitle: string;
     hoursValue: string;

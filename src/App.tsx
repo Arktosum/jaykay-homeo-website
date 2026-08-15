@@ -2,6 +2,7 @@ import React from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { StatsBar } from './components/StatsBar';
 import { ClinicInfoCard } from './components/ClinicInfoCard';
 import { SpecialitiesGrid } from './components/SpecialitiesGrid';
 import { ContactLocation } from './components/ContactLocation';
@@ -15,6 +16,7 @@ export const App: React.FC = () => {
         <Header />
         <main style={{ flex: 1 }}>
           <Hero />
+          <StatsBar />
           <ClinicInfoCard />
           <SpecialitiesGrid />
           <ContactLocation />

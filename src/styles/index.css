@@ -320,12 +320,6 @@ img, svg {
   line-height: 1.25;
 }
 
-.hero-doctor-name {
-  font-size: clamp(1.18rem, 3vw, 1.45rem);
-  color: var(--color-action);
-  font-weight: 800;
-}
-
 .hero-subtext {
   font-size: clamp(0.98rem, 2.2vw, 1.12rem);
   color: var(--color-text-muted);
@@ -354,6 +348,64 @@ img, svg {
   .hero-desktop-card {
     display: block;
   }
+}
+
+/* Clean Responsive Stats Bar Section */
+.stats-section {
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 0;
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-button);
+  background-color: rgba(13, 92, 70, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon {
+  color: var(--color-action);
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: clamp(1.4rem, 3.2vw, 1.85rem);
+  font-weight: 800;
+  color: var(--color-action);
+  line-height: 1.15;
+}
+
+.stat-label {
+  font-size: clamp(0.82rem, 1.8vw, 0.92rem);
+  font-weight: 600;
+  color: var(--color-text-muted);
 }
 
 /* Clinic Info Card */

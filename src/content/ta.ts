@@ -29,6 +29,15 @@ export const taContent: ClinicContent = {
     consultingTimeNotice: "பார்வை நேரம்: காலை 10:00 - மாலை 05:00"
   },
 
+  stats: {
+    yearsValue: "42+",
+    yearsLabel: "வருட மருத்துவ அனுபவம்",
+    patientsValue: "10,000+",
+    patientsLabel: "குணமடைந்த நோயாளிகள்",
+    specialitiesValue: "20+",
+    specialitiesLabel: "சிறப்பு சிகிச்சைப் பிரிவுகள்"
+  },
+
   infoCards: {
     hoursTitle: "மருத்துவர் பார்வை நேரம்",
     hoursValue: "காலை 10:00 - மாலை 05:00",
@@ -53,7 +62,7 @@ export const taContent: ClinicContent = {
     title: "முகவரி மற்றும் தொடர்பு விவரங்கள்",
     addressHeader: "கிளினிக் முகவரி",
     fullAddress: [
-      "Dr.N.Jayakanthan",
+      "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
       "39/24 கணபதி நகர்",
       "ஐயர் அம்மா பார்க் அருகில்",
       "R.S. ரோடு",
@@ -63,7 +72,7 @@ export const taContent: ClinicContent = {
       "தமிழ்நாடு"
     ],
     addressDetails: {
-      doctor: "Dr.N.Jayakanthan",
+      doctor: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
       building: "39/24 கணபதி நகர்",
       street: "ஐயர் அம்மா பார்க் அருகில், R.S. ரோடு",
       cityPincode: "பெருந்துறை – 638 052",
@@ -182,7 +191,7 @@ export const taContent: ClinicContent = {
       enTitle: "Hair & Skin Care",
       taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
-        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
+        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுгу முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
       ]
     },
