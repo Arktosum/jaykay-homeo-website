@@ -428,7 +428,7 @@ img, svg {
 
 @media (min-width: 940px) {
   .categories-accordion-grid {
-    grid-template-columns: repeat(3, 1fr);   /* 3-wide grid on Desktop */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -502,24 +502,31 @@ img, svg {
   margin-top: 3px;
 }
 
-/* Contact & Location Section Desktop Grid */
-.contact-stack {
+/* Contact & Location Section Desktop Column Layout Alignment */
+.contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
 @media (min-width: 768px) {
-  .contact-stack {
-    grid-template-columns: 1fr 1fr;         /* 2-column desktop grid */
-    align-items: start;
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;         /* 2 equal desktop columns */
+    align-items: stretch;
   }
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
 }
 
 .phone-action-card {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-bottom: 0;
 }
 
 .phone-link-button {
@@ -556,10 +563,19 @@ img, svg {
   border-radius: var(--radius-pill);
 }
 
+.notice-info-card {
+  background-color: var(--color-bg);
+  border-color: var(--color-border);
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
 .address-map-card {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .address-text-block {
@@ -592,7 +608,7 @@ img, svg {
 
 @media (min-width: 768px) {
   .site-footer {
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -623,7 +639,7 @@ img, svg {
   margin-top: 0.5rem;
 }
 
-/* Mobile Sticky Action Bar - Hidden on Desktop */
+/* Mobile Sticky Action Bar */
 .mobile-sticky-bar {
   position: fixed;
   bottom: 0;

@@ -16,76 +16,82 @@ export const ContactLocation: React.FC = () => {
           </h2>
         </div>
 
-        <div className="contact-stack">
-          {/* Direct Phone Calling Card with Well-Proportioned Action Buttons */}
-          <div className="card phone-action-card">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-              <Phone size={22} style={{ color: 'var(--color-action)' }} />
-              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
-                {content.contactSection.phoneHeader}
-              </h3>
+        <div className="contact-grid">
+          {/* Left Column: Phone Calling Card + Informational Notice */}
+          <div className="contact-column">
+            <div className="card phone-action-card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <Phone size={22} style={{ color: 'var(--color-action)' }} />
+                <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
+                  {content.contactSection.phoneHeader}
+                </h3>
+              </div>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                <a href="tel:+919442726598" className="phone-link-button" aria-label="Call +91 94427 26598">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                    <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                    <span className="phone-number-text">+91 94427 26598</span>
+                  </div>
+                  <span className="phone-call-badge">
+                    {content.contactSection.callBtn}
+                  </span>
+                </a>
+
+                <a href="tel:+918300948421" className="phone-link-button" aria-label="Call +91 83009 48421">
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                    <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                    <span className="phone-number-text">+91 83009 48421</span>
+                  </div>
+                  <span className="phone-call-badge">
+                    {content.contactSection.callBtn}
+                  </span>
+                </a>
+              </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-              <a href="tel:+919442726598" className="phone-link-button" aria-label="Call +91 94427 26598">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
-                  <span className="phone-number-text">+91 94427 26598</span>
-                </div>
-                <span className="phone-call-badge">
-                  {content.contactSection.callBtn}
-                </span>
-              </a>
-
-              <a href="tel:+918300948421" className="phone-link-button" aria-label="Call +91 83009 48421">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                  <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
-                  <span className="phone-number-text">+91 83009 48421</span>
-                </div>
-                <span className="phone-call-badge">
-                  {content.contactSection.callBtn}
-                </span>
-              </a>
+            {/* Medical Notice */}
+            <div className="card notice-info-card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
+                <Info size={18} style={{ color: 'var(--color-text-muted)' }} />
+                <h4 style={{ fontSize: '0.95rem', color: 'var(--color-text-main)' }}>{content.disclaimer.title}</h4>
+              </div>
+              <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', lineHeight: '1.55' }}>
+                {content.disclaimer.text}
+              </p>
             </div>
           </div>
 
-          {/* Address & Google Maps Directions Card */}
-          <div className="card address-map-card">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-              <MapPin size={22} style={{ color: 'var(--color-action)' }} />
-              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
-                {content.contactSection.addressHeader}
-              </h3>
+          {/* Right Column: Address & Google Maps Directions Card */}
+          <div className="contact-column">
+            <div className="card address-map-card">
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <MapPin size={22} style={{ color: 'var(--color-action)' }} />
+                <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
+                  {content.contactSection.addressHeader}
+                </h3>
+              </div>
+
+              <address className="address-text-block">
+                {content.contactSection.fullAddress.map((line, idx) => (
+                  <div key={idx} className={idx === 0 ? 'address-doctor-name' : ''}>
+                    {line}
+                  </div>
+                ))}
+              </address>
+
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-large"
+                aria-label={content.contactSection.getDirectionsBtn}
+              >
+                <Navigation size={20} />
+                <span>{content.contactSection.getDirectionsBtn}</span>
+                <ExternalLink size={16} style={{ opacity: 0.8 }} />
+              </a>
             </div>
-
-            <address className="address-text-block">
-              {content.contactSection.fullAddress.map((line, idx) => (
-                <div key={idx} className={idx === 0 ? 'address-doctor-name' : ''}>
-                  {line}
-                </div>
-              ))}
-            </address>
-
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary btn-large"
-              aria-label={content.contactSection.getDirectionsBtn}
-            >
-              <Navigation size={20} />
-              <span>{content.contactSection.getDirectionsBtn}</span>
-              <ExternalLink size={16} style={{ opacity: 0.8 }} />
-            </a>
-          </div>
-
-          {/* Medical Notice */}
-          <div className="card" style={{ backgroundColor: 'var(--color-bg)', borderColor: 'var(--color-border)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
-              <Info size={18} style={{ color: 'var(--color-text-muted)' }} />
-              <h4 style={{ fontSize: '0.95rem', color: 'var(--color-text-main)' }}>{content.disclaimer.title}</h4>
-            </div>
-            <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>{content.disclaimer.text}</p>
           </div>
         </div>
       </div>
