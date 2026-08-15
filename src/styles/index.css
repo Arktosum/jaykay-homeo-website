@@ -511,7 +511,7 @@ img, svg {
 
 @media (min-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr 1fr;         /* 2 equal desktop columns */
+    grid-template-columns: 1fr 1fr;
     align-items: stretch;
   }
 }
@@ -570,6 +570,7 @@ img, svg {
   flex-grow: 1;
 }
 
+/* Modern Structured Medical Address Card */
 .address-map-card {
   height: 100%;
   display: flex;
@@ -578,27 +579,65 @@ img, svg {
   margin-bottom: 0;
 }
 
-.address-text-block {
-  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
-  line-height: 1.6;
-  color: var(--color-text-main);
+.address-card-body {
   font-style: normal;
   background-color: var(--color-bg);
-  padding: 1rem;
-  border-radius: var(--radius-button);
   border: 1px solid var(--color-border);
+  border-radius: var(--radius-button);
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.address-doctor-header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 0.2rem;
 }
 
 .address-doctor-name {
+  font-size: clamp(1.1rem, 2.5vw, 1.22rem);
   font-weight: 800;
   color: var(--color-action);
-  font-size: clamp(1.05rem, 2.5vw, 1.18rem);
-  margin-bottom: 0.25rem;
+}
+
+.address-doctor-tag {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.address-line-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  color: var(--color-text-main);
+}
+
+.address-line-icon {
+  color: var(--color-action);
+  flex-shrink: 0;
+}
+
+.highlight-city {
+  color: var(--color-text-main);
+  padding-top: 0.2rem;
+}
+
+.address-line-sub {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  padding-left: 1.75rem;
 }
 
 /* Redesigned Premium Footer */
 .site-footer {
-  background-color: #073428;           /* Deep Trustworthy Medical Emerald Dark */
+  background-color: #073428;
   color: #ffffff;
   padding: 3rem 0 2.5rem 0;
   margin-top: auto;

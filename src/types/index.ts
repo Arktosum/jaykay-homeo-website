@@ -67,6 +67,13 @@ export interface ClinicContent {
     title: string;
     addressHeader: string;
     fullAddress: string[];
+    addressDetails: {
+      doctor: string;
+      building: string;
+      street: string;
+      cityPincode: string;
+      districtState: string;
+    };
     phoneHeader: string;
     hoursHeader: string;
     appointmentHeader: string;

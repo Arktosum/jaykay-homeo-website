@@ -1,11 +1,12 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { MapPin, Phone, Navigation, ExternalLink, Info } from 'lucide-react';
+import { MapPin, Phone, Navigation, ExternalLink, Info, Building, Compass } from 'lucide-react';
 
 export const ContactLocation: React.FC = () => {
   const { content } = useLanguage();
 
   const mapsUrl = "https://maps.google.com/?q=Jayakanthan+Homeopathy+Clinic+39/24+Ganapathi+Nagar+Iyar+Amma+Park+near+R.S.+Road+Perundurai+638052+Erode+District+Tamil+Nadu";
+  const addr = content.contactSection.addressDetails;
 
   return (
     <section id="contact" className="section-padding" aria-labelledby="contact-heading">
@@ -62,7 +63,7 @@ export const ContactLocation: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Address & Google Maps Directions Card */}
+          {/* Right Column: Beautiful Structured Address Card */}
           <div className="contact-column">
             <div className="card address-map-card">
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
@@ -72,12 +73,30 @@ export const ContactLocation: React.FC = () => {
                 </h3>
               </div>
 
-              <address className="address-text-block">
-                {content.contactSection.fullAddress.map((line, idx) => (
-                  <div key={idx} className={idx === 0 ? 'address-doctor-name' : ''}>
-                    {line}
-                  </div>
-                ))}
+              <address className="address-card-body">
+                <div className="address-doctor-header">
+                  <span className="address-doctor-name">{addr.doctor}</span>
+                  <span className="address-doctor-tag">Homeopathic Physician</span>
+                </div>
+
+                <div className="address-line-item">
+                  <Building size={18} className="address-line-icon" />
+                  <span>{addr.building}</span>
+                </div>
+
+                <div className="address-line-item">
+                  <Compass size={18} className="address-line-icon" />
+                  <span>{addr.street}</span>
+                </div>
+
+                <div className="address-line-item highlight-city">
+                  <MapPin size={18} className="address-line-icon" />
+                  <strong>{addr.cityPincode}</strong>
+                </div>
+
+                <div className="address-line-sub">
+                  <span>{addr.districtState}</span>
+                </div>
               </address>
 
               <a

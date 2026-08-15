@@ -62,6 +62,13 @@ export const taContent: ClinicContent = {
       "ஈரோடு மாவட்டம்",
       "தமிழ்நாடு"
     ],
+    addressDetails: {
+      doctor: "Dr.N.Jayakanthan",
+      building: "39/24 கணபதி நகர்",
+      street: "ஐயர் அம்மா பார்க் அருகில், R.S. ரோடு",
+      cityPincode: "பெருந்துறை – 638 052",
+      districtState: "ஈரோடு மாவட்டம், தமிழ்நாடு"
+    },
     phoneHeader: "முன்பதிவுக்கான தொலைபேசி எண்கள்",
     hoursHeader: "பார்வை நேரம்",
     appointmentHeader: "முன்பதிவு விதிமுறை",

@@ -62,6 +62,13 @@ export const enContent: ClinicContent = {
       "Erode District",
       "Tamil Nadu"
     ],
+    addressDetails: {
+      doctor: "Dr.N.Jayakanthan",
+      building: "39/24 Ganapathi Nagar",
+      street: "Near Iyar Amma Park, R.S. Road",
+      cityPincode: "Perundurai – 638 052",
+      districtState: "Erode District, Tamil Nadu"
+    },
     phoneHeader: "Appointment Phone Numbers",
     hoursHeader: "Consulting Hours",
     appointmentHeader: "Appointment Requirement",
