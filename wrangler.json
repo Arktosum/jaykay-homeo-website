@@ -1,9 +1,5 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "jaykay-homeo-website",
-  "compatibility_date": "2026-08-15",
-  "pages_build_output_dir": "./dist",
-  "assets": {
-    "directory": "./dist"
-  }
+  "pages_build_output_dir": "./dist"
 }
