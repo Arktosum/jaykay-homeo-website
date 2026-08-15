@@ -2,9 +2,9 @@ import type { ClinicContent } from '../types';
 
 export const enContent: ClinicContent = {
   clinicName: "Jayakanthan Homeopathy Clinic",
-  subtitle: "Pure Homeopathic Medical Care",
+  subtitle: "Pure Homeopathic Care • 42 Years Experience",
   tagline: "High class original pure homeopathy of 42 years of experience",
-  doctorName: "N. Jayakanthan",
+  doctorName: "Dr. N. Jayakanthan",
   experienceYears: 42,
   experienceBadge: "42 Years of Dedicated Practice",
 
@@ -20,7 +20,7 @@ export const enContent: ClinicContent = {
   hero: {
     badge: "Established & Trusted Care",
     title: "Jayakanthan Homeopathy Clinic",
-    subtext: "High class original pure homeopathy of 42 years of experience. Providing gentle, natural, and holistic treatment in Perundurai.",
+    subtext: "Dedicated to gentle, natural, and holistic healing in Perundurai. Providing original pure homeopathic remedies for over four decades under the care of Dr. N. Jayakanthan.",
     callAction: "Call for Appointment",
     directionsAction: "Get Directions",
     consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM daily"
@@ -50,7 +50,7 @@ export const enContent: ClinicContent = {
     title: "Contact & Location Details",
     addressHeader: "Clinic Address",
     fullAddress: [
-      "N. Jayakanthan",
+      "Dr. N. Jayakanthan",
       "39/24 Ganapathi Nagar",
       "Iyar Amma Park near",
       "R.S. Road, Perundurai",
@@ -65,12 +65,12 @@ export const enContent: ClinicContent = {
 
   disclaimer: {
     title: "Informational Notice",
-    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult N. Jayakanthan directly at the clinic for personalized guidance."
+    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult Dr. N. Jayakanthan directly at the clinic for personalized guidance."
   },
 
   footer: {
     copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
-    tagline: "High class original pure homeopathy of 42 years of experience."
+    tagline: "Providing trusted pure homeopathic treatment in Perundurai for over 42 years."
   },
 
   categories: [
