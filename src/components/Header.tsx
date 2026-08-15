@@ -8,8 +8,8 @@ export const Header: React.FC = () => {
     <header className="site-header" role="banner">
       <div className="container header-inner">
         <a href="#home" className="brand-info" aria-label={content.clinicName}>
+          <img src="/logo.png" alt="Medical Green Cross Logo" className="brand-logo" />
           <span className="brand-name">{content.nav.headerTitle}</span>
-          <span className="brand-sub">{content.doctorName} • Perundurai</span>
         </a>
 
         <nav aria-label="Language selection" className="lang-switcher">
