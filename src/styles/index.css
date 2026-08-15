@@ -732,9 +732,11 @@ img, svg {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-pill);
   padding: 0.35rem 0.85rem;
-  font-size: clamp(0.78rem, 1.8vw, 0.88rem);
+  font-size: clamp(0.78rem, 2.5vw, 0.88rem);
   color: #a7f3d0;
   margin: 0.4rem 0;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .view-icon {
