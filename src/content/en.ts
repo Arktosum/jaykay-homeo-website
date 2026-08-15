@@ -3,8 +3,8 @@ import type { ClinicContent } from '../types';
 export const enContent: ClinicContent = {
   clinicName: "Jayakanthan Homeopathy Clinic",
   subtitle: "Pure Homeopathic Medical Care",
-  tagline: "42 Years of Dedicated Homeopathic Practice",
-  doctorName: "Dr. N. Jayakanthan",
+  tagline: "High class original pure homeopathy of 42 years of experience",
+  doctorName: "Dr.N.Jayakanthan",
   experienceYears: 42,
   experienceBadge: "42 Years Experience",
 
@@ -13,7 +13,7 @@ export const enContent: ClinicContent = {
     specialities: "Specialities",
     about: "About Clinic",
     contact: "Contact & Location",
-    headerTitle: "Jayakanthan Homeopathy",
+    headerTitle: "Jayakanthan Homeopathy Clinic",
     callAppointment: "Call for Appointment",
     getDirections: "Tap for Map Route",
     stickyCall: "Call Now",
@@ -21,59 +21,62 @@ export const enContent: ClinicContent = {
   },
 
   hero: {
-    badge: "Trusted Healing Since 1982",
+    badge: "42 Years of Experience",
     title: "Jayakanthan Homeopathy Clinic",
-    subtext: "Gentle, natural, and holistic homeopathic healthcare in Perundurai under the expert guidance of Dr. N. Jayakanthan.",
+    subtext: "High class original pure homeopathy of 42 years of experience by Dr.N.Jayakanthan in Perundurai.",
     callAction: "Call for Appointment",
-    directionsAction: "Tap for Map Route",
-    consultingTimeNotice: "Consulting Hours: Daily 10:00 AM to 05:00 PM"
+    directionsAction: "Get Directions",
+    consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM"
   },
 
   infoCards: {
     hoursTitle: "Consulting Hours",
     hoursValue: "10:00 AM – 05:00 PM",
     appointmentTitle: "Advance Appointment Rule",
-    appointmentText: "Please call one day in advance to confirm your appointment.",
+    appointmentText: "Please get appointment one day in advance by phone.",
     phoneTitle: "Direct Phone Contact",
     addressTitle: "Clinic Location"
   },
 
   specialitiesSection: {
     badge: "Specialized Treatments",
-    title: "Conditions Treated with Pure Homeopathy",
-    description: "Holistic homeopathic care for chronic illnesses, allergies, metabolic disorders, joint pain, and family health.",
+    title: "Specialist in the Following",
+    description: "Experienced pure homeopathic treatment for chronic diseases and specialist care.",
     allTab: "All Specialities",
-    searchPlaceholder: "Type illness name (e.g. Headache, Asthma, Skin...)",
+    searchPlaceholder: "Search condition (e.g. Headache, Asthma, Skin...)",
     noResults: "No matching condition found.",
     totalCountLabel: "Total Specialized Services Covered"
   },
 
   contactSection: {
     badge: "Location & Phone",
-    title: "Visit or Call Our Clinic",
-    addressHeader: "Clinic Address & Map",
+    title: "Contact & Location Details",
+    addressHeader: "Clinic Address",
     fullAddress: [
-      "Dr. N. Jayakanthan",
+      "Dr.N.Jayakanthan",
       "39/24 Ganapathi Nagar",
-      "Near Iyar Amma Park",
-      "R.S. Road, Perundurai",
-      "Erode District, Tamil Nadu – 638 052"
+      "Iyar Amma Park near",
+      "R.S. Road",
+      "Perundurai",
+      "638 052",
+      "Erode District",
+      "Tamil Nadu"
     ],
     phoneHeader: "Appointment Phone Numbers",
     hoursHeader: "Consulting Hours",
     appointmentHeader: "Appointment Requirement",
-    getDirectionsBtn: "Tap for Google Maps Directions",
+    getDirectionsBtn: "Get Directions on Google Maps",
     callBtn: "Call Now"
   },
 
   disclaimer: {
-    title: "Important Clinic Notice",
-    text: "Homeopathic consultations are individual. Please visit Dr. N. Jayakanthan at the clinic for personalized diagnosis and treatment."
+    title: "Informational Notice",
+    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult Dr.N.Jayakanthan directly at the clinic for personalized guidance."
   },
 
   footer: {
     copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
-    tagline: "Dedicated homeopathic healthcare serving Perundurai for 42 years."
+    tagline: "High class original pure homeopathy of 42 years of experience."
   },
 
   categories: [

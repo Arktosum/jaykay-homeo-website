@@ -27,20 +27,20 @@ export const ContactLocation: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-              <a href="tel:+919442726598" className="phone-link-button" aria-label="Call 94427 26598">
+              <a href="tel:+919442726598" className="phone-link-button" aria-label="Call +91 94427 26598">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <Phone size={22} style={{ color: 'var(--color-action)' }} />
-                  <span>94427 26598</span>
+                  <span>+91 94427 26598</span>
                 </div>
                 <span style={{ fontSize: '0.9rem', color: 'var(--color-action)', fontWeight: 700 }}>
                   {content.contactSection.callBtn}
                 </span>
               </a>
 
-              <a href="tel:+918300948421" className="phone-link-button" aria-label="Call 83009 48421">
+              <a href="tel:+918300948421" className="phone-link-button" aria-label="Call +91 83009 48421">
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                   <Phone size={22} style={{ color: 'var(--color-action)' }} />
-                  <span>83009 48421</span>
+                  <span>+91 83009 48421</span>
                 </div>
                 <span style={{ fontSize: '0.9rem', color: 'var(--color-action)', fontWeight: 700 }}>
                   {content.contactSection.callBtn}
