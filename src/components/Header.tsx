@@ -9,21 +9,17 @@ export const Header: React.FC = () => {
     <header className="site-header" role="banner">
       <div className="container header-inner">
         <a href="#home" className="brand-link" aria-label={content.clinicName}>
-          <div className="brand-logo-icon" aria-hidden="true">
-            <span style={{ fontSize: '1.4rem', fontWeight: 800 }}>JH</span>
-          </div>
           <div className="brand-info">
             <span className="brand-name">{content.clinicName}</span>
-            <span className="brand-sub">{content.tagline}</span>
+            <span className="brand-sub">{content.doctorName} • Perundurai</span>
           </div>
         </a>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
           {/* Quick Header Call Button for Desktop/Tablet */}
           <a
             href="tel:+919442726598"
-            className="btn btn-outline"
-            style={{ display: 'none', minHeight: '40px', padding: '0.4rem 0.9rem', fontSize: '0.88rem' }}
+            className="btn btn-outline desktop-only-btn"
             aria-label={`${content.nav.callAppointment}: 94427 26598`}
           >
             <Phone size={16} />

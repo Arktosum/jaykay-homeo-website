@@ -2,11 +2,11 @@ import type { ClinicContent } from '../types';
 
 export const enContent: ClinicContent = {
   clinicName: "Jayakanthan Homeopathy Clinic",
-  subtitle: "Pure Homeopathic Care • 42 Years Experience",
-  tagline: "High class original pure homeopathy of 42 years of experience",
+  subtitle: "Pure Homeopathic Medical Care",
+  tagline: "42 Years of Dedicated Homeopathic Practice",
   doctorName: "Dr. N. Jayakanthan",
   experienceYears: 42,
-  experienceBadge: "42 Years of Dedicated Practice",
+  experienceBadge: "42 Years Experience",
 
   nav: {
     home: "Home",
@@ -14,63 +14,63 @@ export const enContent: ClinicContent = {
     about: "About Clinic",
     contact: "Contact & Location",
     callAppointment: "Call for Appointment",
-    getDirections: "Get Directions"
+    getDirections: "Tap for Map Route"
   },
 
   hero: {
-    badge: "Established & Trusted Care",
+    badge: "Trusted Healing Since 1982",
     title: "Jayakanthan Homeopathy Clinic",
-    subtext: "Dedicated to gentle, natural, and holistic healing in Perundurai. Providing original pure homeopathic remedies for over four decades under the care of Dr. N. Jayakanthan.",
+    subtext: "Gentle, natural, and holistic homeopathic healthcare in Perundurai under the expert guidance of Dr. N. Jayakanthan.",
     callAction: "Call for Appointment",
-    directionsAction: "Get Directions",
-    consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM daily"
+    directionsAction: "Tap for Google Maps Directions",
+    consultingTimeNotice: "Consulting Hours: Daily 10:00 AM to 05:00 PM"
   },
 
   infoCards: {
     hoursTitle: "Consulting Hours",
     hoursValue: "10:00 AM – 05:00 PM",
-    appointmentTitle: "Advance Appointment Required",
-    appointmentText: "Please get appointment one day in advance by phone.",
+    appointmentTitle: "Advance Appointment Rule",
+    appointmentText: "Please call one day in advance to confirm your appointment.",
     phoneTitle: "Direct Phone Contact",
     addressTitle: "Clinic Location"
   },
 
   specialitiesSection: {
-    badge: "Our Specialities",
-    title: "Conditions Treated with Care",
-    description: "Experienced pure homeopathic treatment for chronic ailments, metabolic conditions, respiratory issues, and overall health.",
+    badge: "Specialized Treatments",
+    title: "Conditions Treated with Pure Homeopathy",
+    description: "Holistic homeopathic care for chronic illnesses, allergies, metabolic disorders, joint pain, and family health.",
     allTab: "All Specialities",
-    searchPlaceholder: "Search condition (e.g. Headache, Asthma, Skin...)",
+    searchPlaceholder: "Type illness name (e.g. Headache, Asthma, Skin...)",
     noResults: "No matching condition found.",
     totalCountLabel: "Total Specialized Services Covered"
   },
 
   contactSection: {
-    badge: "Visit or Call Us",
-    title: "Contact & Location Details",
-    addressHeader: "Clinic Address",
+    badge: "Location & Phone",
+    title: "Visit or Call Our Clinic",
+    addressHeader: "Clinic Address & Map",
     fullAddress: [
       "Dr. N. Jayakanthan",
       "39/24 Ganapathi Nagar",
-      "Iyar Amma Park near",
+      "Near Iyar Amma Park",
       "R.S. Road, Perundurai",
       "Erode District, Tamil Nadu – 638 052"
     ],
-    phoneHeader: "Phone Numbers for Appointment",
+    phoneHeader: "Appointment Phone Numbers",
     hoursHeader: "Consulting Hours",
-    appointmentHeader: "Appointment Rule",
-    getDirectionsBtn: "Get Directions on Google Maps",
+    appointmentHeader: "Appointment Requirement",
+    getDirectionsBtn: "📍 Tap Here to Open Google Maps",
     callBtn: "Call Now"
   },
 
   disclaimer: {
-    title: "Informational Notice",
-    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult Dr. N. Jayakanthan directly at the clinic for personalized guidance."
+    title: "Important Clinic Notice",
+    text: "Homeopathic consultations are individual. Please visit Dr. N. Jayakanthan at the clinic for personalized diagnosis and treatment."
   },
 
   footer: {
     copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
-    tagline: "Providing trusted pure homeopathic treatment in Perundurai for over 42 years."
+    tagline: "Dedicated homeopathic healthcare serving Perundurai for 42 years."
   },
 
   categories: [
@@ -167,7 +167,7 @@ export const enContent: ClinicContent = {
       id: "skin-hair",
       iconName: "sparkles",
       enTitle: "Hair & Skin Care",
-      taTitle: "தோல் & முடி பராமாிப்பு",
+      taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
         { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
