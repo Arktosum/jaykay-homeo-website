@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Phone, MapPin, Award } from 'lucide-react';
+import { Phone, MapPin, Award, Clock, Calendar } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const { content } = useLanguage();
@@ -10,44 +10,66 @@ export const Hero: React.FC = () => {
   return (
     <section id="home" className="hero-section" aria-labelledby="hero-heading">
       <div className="container">
-        <div className="hero-stack">
-          <div className="hero-badge">
-            <Award size={18} />
-            <span>{content.experienceBadge}</span>
+        <div className="hero-grid">
+          <div className="hero-stack">
+            <div className="hero-badge">
+              <Award size={18} />
+              <span>{content.experienceBadge}</span>
+            </div>
+
+            <h1 id="hero-heading" className="hero-title">
+              {content.hero.title}
+            </h1>
+
+            <div className="hero-doctor-name">
+              {content.doctorName}
+            </div>
+
+            <p className="hero-subtext">
+              {content.hero.subtext}
+            </p>
+
+            <div className="hero-actions">
+              <a
+                href="tel:+919442726598"
+                className="btn btn-primary btn-large"
+                aria-label={`${content.hero.callAction}: +91 94427 26598`}
+              >
+                <Phone size={22} />
+                <span>{content.hero.callAction}</span>
+              </a>
+
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline btn-large"
+                aria-label={content.hero.directionsAction}
+              >
+                <MapPin size={22} />
+                <span>{content.hero.directionsAction}</span>
+              </a>
+            </div>
           </div>
 
-          <h1 id="hero-heading" className="hero-title">
-            {content.hero.title}
-          </h1>
-
-          <div className="hero-doctor-name">
-            {content.doctorName}
-          </div>
-
-          <p className="hero-subtext">
-            {content.hero.subtext}
-          </p>
-
-          <div className="hero-actions">
-            <a
-              href="tel:+919442726598"
-              className="btn btn-primary btn-large"
-              aria-label={`${content.hero.callAction}: 94427 26598`}
-            >
-              <Phone size={22} />
-              <span>{content.hero.callAction}</span>
-            </a>
-
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-outline btn-large"
-              aria-label={content.hero.directionsAction}
-            >
-              <MapPin size={22} />
-              <span>{content.hero.directionsAction}</span>
-            </a>
+          <div className="hero-desktop-card card">
+            <h3 style={{ fontSize: '1.2rem', marginBottom: '0.85rem', color: 'var(--color-action)' }}>
+              {content.clinicName}
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.98rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <Clock size={20} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                <span>{content.infoCards.hoursTitle}: <strong>{content.infoCards.hoursValue}</strong></span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                <Calendar size={20} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                <span>{content.infoCards.appointmentText}</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', marginTop: '0.25rem' }}>
+                <Phone size={20} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                <a href="tel:+919442726598" style={{ fontWeight: 700, color: 'var(--color-action)' }}>+91 94427 26598</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
