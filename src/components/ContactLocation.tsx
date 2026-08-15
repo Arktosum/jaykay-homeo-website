@@ -10,39 +10,39 @@ export const ContactLocation: React.FC = () => {
   return (
     <section id="contact" className="section-padding" aria-labelledby="contact-heading">
       <div className="container">
-        <div style={{ marginBottom: '1.5rem' }}>
+        <div style={{ marginBottom: '1.25rem' }}>
           <h2 id="contact-heading" className="specialities-title">
             {content.contactSection.title}
           </h2>
         </div>
 
         <div className="contact-stack">
-          {/* Direct Phone Calling Card */}
+          {/* Direct Phone Calling Card with Well-Proportioned Action Buttons */}
           <div className="card phone-action-card">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-              <Phone size={24} style={{ color: 'var(--color-action)' }} />
-              <h3 style={{ fontSize: '1.2rem', color: 'var(--color-text-main)' }}>
+              <Phone size={22} style={{ color: 'var(--color-action)' }} />
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
                 {content.contactSection.phoneHeader}
               </h3>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
               <a href="tel:+919442726598" className="phone-link-button" aria-label="Call +91 94427 26598">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <Phone size={22} style={{ color: 'var(--color-action)' }} />
-                  <span>+91 94427 26598</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                  <span className="phone-number-text">+91 94427 26598</span>
                 </div>
-                <span style={{ fontSize: '0.9rem', color: 'var(--color-action)', fontWeight: 700 }}>
+                <span className="phone-call-badge">
                   {content.contactSection.callBtn}
                 </span>
               </a>
 
               <a href="tel:+918300948421" className="phone-link-button" aria-label="Call +91 83009 48421">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <Phone size={22} style={{ color: 'var(--color-action)' }} />
-                  <span>+91 83009 48421</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                  <Phone size={18} style={{ color: 'var(--color-action)', flexShrink: 0 }} />
+                  <span className="phone-number-text">+91 83009 48421</span>
                 </div>
-                <span style={{ fontSize: '0.9rem', color: 'var(--color-action)', fontWeight: 700 }}>
+                <span className="phone-call-badge">
                   {content.contactSection.callBtn}
                 </span>
               </a>
@@ -52,8 +52,8 @@ export const ContactLocation: React.FC = () => {
           {/* Address & Google Maps Directions Card */}
           <div className="card address-map-card">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-              <MapPin size={24} style={{ color: 'var(--color-action)' }} />
-              <h3 style={{ fontSize: '1.2rem', color: 'var(--color-text-main)' }}>
+              <MapPin size={22} style={{ color: 'var(--color-action)' }} />
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-text-main)' }}>
                 {content.contactSection.addressHeader}
               </h3>
             </div>
@@ -73,9 +73,9 @@ export const ContactLocation: React.FC = () => {
               className="btn btn-primary btn-large"
               aria-label={content.contactSection.getDirectionsBtn}
             >
-              <Navigation size={22} />
+              <Navigation size={20} />
               <span>{content.contactSection.getDirectionsBtn}</span>
-              <ExternalLink size={18} style={{ opacity: 0.8 }} />
+              <ExternalLink size={16} style={{ opacity: 0.8 }} />
             </a>
           </div>
 

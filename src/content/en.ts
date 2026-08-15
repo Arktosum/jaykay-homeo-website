@@ -76,7 +76,7 @@ export const enContent: ClinicContent = {
 
   footer: {
     copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
-    tagline: "High class original pure homeopathy of 42 years of experience."
+    tagline: "Dedicated to gentle, natural, and individual homeopathic care in Perundurai since 1982."
   },
 
   categories: [
