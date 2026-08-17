@@ -1,10 +1,13 @@
 import type { ClinicContent } from '../types';
+import { getActiveClinicProfile } from '../config/clinicConfig';
+
+const profile = getActiveClinicProfile();
 
 export const enContent: ClinicContent = {
-  clinicName: "Jayakanthan Homeopathy Clinic",
+  clinicName: profile.clinicNameEn,
   subtitle: "Pure Homeopathic Medical Care",
   tagline: "High class original pure homeopathy of 42 years of experience",
-  doctorName: "Dr.N.Jayakanthan",
+  doctorName: profile.doctorName,
   experienceYears: 42,
   experienceBadge: "42 Years Experience",
 
@@ -13,7 +16,7 @@ export const enContent: ClinicContent = {
     specialities: "Specialities",
     about: "About Clinic",
     contact: "Contact & Location",
-    headerTitle: "Jayakanthan Homeopathy Clinic",
+    headerTitle: profile.clinicNameEn,
     callAppointment: "Call for Appointment",
     getDirections: "Tap for Map Route",
     stickyCall: "Call Now",
@@ -23,7 +26,7 @@ export const enContent: ClinicContent = {
   hero: {
     badge: "42 Years of Experience",
     title: "Pure Homeopathic Healing & Care",
-    subtext: "Providing gentle, natural, and individual homeopathic medical treatment in Perundurai with over four decades of trusted clinical experience.",
+    subtext: `Providing gentle, natural, and individual homeopathic medical treatment in Perundurai with over four decades of trusted clinical experience.`,
     callAction: "Call for Appointment",
     directionsAction: "Get Directions",
     consultingTimeNotice: "Consulting Hours: 10:00 AM to 05:00 PM"
@@ -32,9 +35,9 @@ export const enContent: ClinicContent = {
   stats: {
     yearsValue: "42+",
     yearsLabel: "Years of Medical Practice",
-    patientsValue: "10,000+",
+    patientsValue: "4,00,000+",
     patientsLabel: "Trusted Patients Treated",
-    specialitiesValue: "20+",
+    specialitiesValue: "40+",
     specialitiesLabel: "Specialized Treatment Services"
   },
 
@@ -62,7 +65,7 @@ export const enContent: ClinicContent = {
     title: "Contact & Location Details",
     addressHeader: "Clinic Address",
     fullAddress: [
-      "Jayakanthan Homeopathy Clinic",
+      profile.clinicNameEn,
       "39/24 Ganapathi Nagar",
       "Amma Iyer Kulam Park near",
       "R.S. Road",
@@ -72,7 +75,7 @@ export const enContent: ClinicContent = {
       "Tamil Nadu"
     ],
     addressDetails: {
-      doctor: "Jayakanthan Homeopathy Clinic",
+      doctor: profile.clinicNameEn,
       building: "39/24 Ganapathi Nagar",
       street: "Near Amma Iyer Kulam Park, R.S. Road",
       cityPincode: "Perundurai – 638 052",
@@ -87,11 +90,11 @@ export const enContent: ClinicContent = {
 
   disclaimer: {
     title: "Informational Notice",
-    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult Dr.N.Jayakanthan directly at the clinic for personalized guidance."
+    text: "Homeopathy treatments are provided based on individual case history and consultation. Please consult the practitioner directly at the clinic for personalized guidance."
   },
 
   footer: {
-    copyright: "Jayakanthan Homeopathy Clinic. All rights reserved.",
+    copyright: `${profile.clinicNameEn}. All rights reserved.`,
     tagline: "Dedicated to gentle, natural, and individual homeopathic care in Perundurai since 1982.",
     pageViewsLabel: "Total Page Views"
   },
@@ -192,7 +195,7 @@ export const enContent: ClinicContent = {
       enTitle: "Hair & Skin Care",
       taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
-        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுгу முடி உதிர்தல் நரை முடி" },
+        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
       ]
     },

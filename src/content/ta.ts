@@ -1,10 +1,13 @@
 import type { ClinicContent } from '../types';
+import { getActiveClinicProfile } from '../config/clinicConfig';
+
+const profile = getActiveClinicProfile();
 
 export const taContent: ClinicContent = {
-  clinicName: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
+  clinicName: profile.clinicNameTa,
   subtitle: "42 வருட அனுபவமிக்க உயர்தர அசல் தூய ஹோமியோபதி சிகிச்சை",
   tagline: "42 வருட அனுபவமிக்க உயர்தர அசல் தூய ஹோமியோபதி சிகிச்சை",
-  doctorName: "Dr.N.Jayakanthan",
+  doctorName: profile.doctorName,
   experienceYears: 42,
   experienceBadge: "42 வருட அனுபவம்",
 
@@ -13,7 +16,7 @@ export const taContent: ClinicContent = {
     specialities: "சிகிச்சைகள்",
     about: "மருத்துவமனை பற்றி",
     contact: "தொடர்பு & முகவரி",
-    headerTitle: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
+    headerTitle: profile.clinicNameTa,
     callAppointment: "முன்பதிவு செய்ய அழைக்கவும்",
     getDirections: "கூகுள் மேப் வழி",
     stickyCall: "அழைக்க",
@@ -32,9 +35,9 @@ export const taContent: ClinicContent = {
   stats: {
     yearsValue: "42+",
     yearsLabel: "வருட மருத்துவ அனுபவம்",
-    patientsValue: "10,000+",
+    patientsValue: "4,00,000+",
     patientsLabel: "குணமடைந்த நோயாளிகள்",
-    specialitiesValue: "20+",
+    specialitiesValue: "40+",
     specialitiesLabel: "சிறப்பு சிகிச்சைப் பிரிவுகள்"
   },
 
@@ -62,7 +65,7 @@ export const taContent: ClinicContent = {
     title: "முகவரி மற்றும் தொடர்பு விவரங்கள்",
     addressHeader: "கிளினிக் முகவரி",
     fullAddress: [
-      "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
+      profile.clinicNameTa,
       "39/24 கணபதி நகர்",
       "அம்மா ஐயர் குளம் பார்க் அருகில்",
       "R.S. ரோடு",
@@ -72,7 +75,7 @@ export const taContent: ClinicContent = {
       "தமிழ்நாடு"
     ],
     addressDetails: {
-      doctor: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக்",
+      doctor: profile.clinicNameTa,
       building: "39/24 கணபதி நகர்",
       street: "அம்மா ஐயர் குளம் பார்க் அருகில், R.S. ரோடு",
       cityPincode: "பெருந்துறை – 638 052",
@@ -87,11 +90,11 @@ export const taContent: ClinicContent = {
 
   disclaimer: {
     title: "தகவல் அறிவிப்பு",
-    text: "ஹோமியோபதி சிகிச்சைகள் நபருக்கு நபர் மாறுபடும். முறையான மருத்துவ ஆலோசனைக்கு Dr.N.Jayakanthan அவர்களை நேரடியாக கிளினிக்கில் சந்திக்கவும்."
+    text: "ஹோமியோபதி சிகிச்சைகள் நபருக்கு நபர் மாறுபடும். முறையான மருத்துவ ஆலோசனைக்கு மருத்துவரை நேரடியாக கிளினிக்கில் சந்திக்கவும்."
   },
 
   footer: {
-    copyright: "ஜெயகாந்தன் ஹோமியோபதி கிளினிக். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
+    copyright: `${profile.clinicNameTa}. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.`,
     tagline: "பெருந்துறையில் 1982 முதல் குடும்பங்களுக்கான பக்கவிளைவில்லாத அசல் ஹோமியோபதி மருத்துவ சேவை.",
     pageViewsLabel: "மொத்தப் பார்வைகள்"
   },
@@ -192,7 +195,7 @@ export const taContent: ClinicContent = {
       enTitle: "Hair & Skin Care",
       taTitle: "தோல் & முடி பராமரிப்பு",
       items: [
-        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுகு முடி உதிர்தல் நரை முடி" },
+        { id: "sp-18", en: "Dandruff, Hair falling, Grey hair", ta: "பொடுгу முடி உதிர்தல் நரை முடி" },
         { id: "sp-19", en: "Skin diseases, Psoriasis, Vitiligo, Itching", ta: "தோல் நோய்கள் சொரியாசிஸ் வெண்புள்ளி அரிப்பு" }
       ]
     },

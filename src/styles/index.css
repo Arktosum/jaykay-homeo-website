@@ -1,5 +1,5 @@
 :root {
-  /* Clean Palette - 1 Accent + 3 Neutrals */
+  /* Clean Default Emerald Palette - Dr. N. Jayakanthan */
   --color-action: #0d5c46;            /* Deep Emerald Medical Green (WCAG 6.8:1) */
   --color-action-hover: #083c2e;
   --color-bg: #f4f8f6;                /* Soft Warm Medical Off-White */
@@ -35,6 +35,16 @@
   /* Transitions */
   --transition-fast: 0.15s ease;
   --transition-normal: 0.25s ease;
+}
+
+/* Modern Sapphire Ocean Theme - Dr. J. Vivekananthan */
+[data-theme="sapphire"] {
+  --color-action: #0284c7;            /* Ocean Sapphire Accent */
+  --color-action-hover: #0369a1;
+  --color-bg: #f0f9ff;                /* Fresh Light Sky Tint */
+  --color-surface: #ffffff;
+  --color-border: #bae6fd;
+  --shadow-card-hover: 0 8px 24px rgba(2, 132, 199, 0.16);
 }
 
 /* Reset & Strict Box Model */
@@ -350,6 +360,102 @@ img, svg {
   }
 }
 
+/* Forefront Doctor Photo Spotlight Card */
+.doctor-spotlight-card {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.doctor-avatar-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, var(--color-action), #38bdf8);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+}
+
+.doctor-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.doctor-verified-badge {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-action);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.doctor-spotlight-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-action);
+  margin-top: 0.25rem;
+}
+
+.doctor-spotlight-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.doctor-quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  text-align: left;
+  background-color: var(--color-bg);
+  padding: 0.85rem;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+.quick-info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-info-phones {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.phone-numbers-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-weight: 700;
+  color: var(--color-action);
+}
+
+.info-icon {
+  color: var(--color-action);
+  flex-shrink: 0;
+}
+
 /* Clean Responsive Stats Bar Section */
 .stats-section {
   padding: 0.5rem 0 1.5rem 0;
@@ -384,6 +490,10 @@ img, svg {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+[data-theme="sapphire"] .stat-icon-wrapper {
+  background-color: rgba(2, 132, 199, 0.1);
 }
 
 .stat-icon {
@@ -599,6 +709,10 @@ img, svg {
   background-color: rgba(13, 92, 70, 0.04);
 }
 
+[data-theme="sapphire"] .phone-link-button:hover, [data-theme="sapphire"] .phone-link-button:focus {
+  background-color: rgba(2, 132, 199, 0.06);
+}
+
 .phone-number-text {
   font-size: clamp(0.95rem, 2.2vw, 1.05rem);
   font-weight: 700;
@@ -613,6 +727,10 @@ img, svg {
   background-color: rgba(13, 92, 70, 0.08);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-pill);
+}
+
+[data-theme="sapphire"] .phone-call-badge {
+  background-color: rgba(2, 132, 199, 0.12);
 }
 
 .notice-info-card {
@@ -697,6 +815,10 @@ img, svg {
   padding-bottom: calc(5rem + env(safe-area-inset-bottom));
 }
 
+[data-theme="sapphire"] .site-footer {
+  background-color: #072e4a;
+}
+
 @media (min-width: 768px) {
   .site-footer {
     padding-bottom: 2.5rem;
@@ -724,6 +846,10 @@ img, svg {
   line-height: 1.6;
 }
 
+[data-theme="sapphire"] .footer-sub {
+  color: #bae6fd;
+}
+
 .page-view-counter-badge {
   display: inline-flex;
   align-items: center;
@@ -739,9 +865,17 @@ img, svg {
   max-width: 100%;
 }
 
+[data-theme="sapphire"] .page-view-counter-badge {
+  color: #bae6fd;
+}
+
 .view-icon {
   color: #a7f3d0;
   flex-shrink: 0;
+}
+
+[data-theme="sapphire"] .view-icon {
+  color: #bae6fd;
 }
 
 .footer-copyright {
