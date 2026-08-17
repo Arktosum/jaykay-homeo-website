@@ -18,6 +18,23 @@ export const Hero: React.FC = () => {
               <span>{content.experienceBadge}</span>
             </div>
 
+            {/* Mobile Doctor Forefront Portrait for Dr. J. Vivekananthan */}
+            {profile.showDoctorForefront && (
+              <div className="mobile-doctor-forefront">
+                <div className="mobile-avatar-circle">
+                  <img
+                    src={profile.doctorImage || '/doctor-vivekananthan.jpg'}
+                    alt={profile.doctorName}
+                    className="mobile-avatar-img"
+                  />
+                  <div className="mobile-verified-tag">
+                    <CheckCircle2 size={14} />
+                    <span>{profile.doctorName}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <h1 id="hero-heading" className="hero-title">
               {content.hero.title}
             </h1>

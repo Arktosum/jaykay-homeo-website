@@ -47,6 +47,26 @@
   --shadow-card-hover: 0 8px 24px rgba(2, 132, 199, 0.16);
 }
 
+[data-theme="sapphire"] body {
+  background: 
+    radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.14) 0%, transparent 40%),
+    radial-gradient(circle at 90% 60%, rgba(2, 132, 199, 0.12) 0%, transparent 45%),
+    #f0f9ff;
+  background-attachment: fixed;
+}
+
+[data-theme="sapphire"] .card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(186, 230, 253, 0.85);
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.08);
+}
+
+[data-theme="sapphire"] .card:hover {
+  box-shadow: 0 14px 36px rgba(2, 132, 199, 0.15);
+  border-color: var(--color-action);
+}
+
 /* Reset & Strict Box Model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -165,6 +185,10 @@ img, svg {
   box-shadow: 0 4px 14px rgba(13, 92, 70, 0.25);
 }
 
+[data-theme="sapphire"] .btn-primary {
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
 .btn-primary:hover, .btn-primary:focus {
   background-color: var(--color-action-hover);
   transform: translateY(-1px);
@@ -178,6 +202,10 @@ img, svg {
 
 .btn-outline:hover, .btn-outline:focus {
   background-color: rgba(13, 92, 70, 0.06);
+}
+
+[data-theme="sapphire"] .btn-outline:hover, [data-theme="sapphire"] .btn-outline:focus {
+  background-color: rgba(2, 132, 199, 0.08);
 }
 
 .btn-large {
@@ -284,6 +312,10 @@ img, svg {
   box-shadow: 0 2px 6px rgba(13, 92, 70, 0.2);
 }
 
+[data-theme="sapphire"] .lang-btn.active {
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+}
+
 /* Hero Section Desktop Grid */
 .hero-section {
   padding: clamp(1.75rem, 5vw, 3.25rem) 0;
@@ -320,6 +352,10 @@ img, svg {
   background-color: rgba(13, 92, 70, 0.1);
   color: var(--color-action);
   width: fit-content;
+}
+
+[data-theme="sapphire"] .hero-badge {
+  background-color: rgba(2, 132, 199, 0.12);
 }
 
 .hero-title {
@@ -360,6 +396,47 @@ img, svg {
   }
 }
 
+/* Mobile Doctor Forefront Spotlight */
+.mobile-doctor-forefront {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.2rem 0;
+}
+
+@media (min-width: 880px) {
+  .mobile-doctor-forefront {
+    display: none;
+  }
+}
+
+.mobile-avatar-circle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.85rem 0.4rem 0.4rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1);
+}
+
+.mobile-avatar-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-action);
+}
+
+.mobile-verified-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--color-action);
+}
+
 /* Forefront Doctor Photo Spotlight Card */
 .doctor-spotlight-card {
   padding: 1.25rem;
@@ -372,12 +449,12 @@ img, svg {
 
 .doctor-avatar-wrapper {
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 145px;
+  height: 145px;
   border-radius: 50%;
   padding: 4px;
   background: linear-gradient(135deg, var(--color-action), #38bdf8);
-  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.22);
 }
 
 .doctor-avatar-img {
