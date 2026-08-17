@@ -25,12 +25,12 @@ export const CLINIC_PROFILES: Record<ClinicId, ClinicProfile> = {
   vivekananthan: {
     id: 'vivekananthan',
     doctorName: 'Dr.J.Vivekananthan',
-    clinicNameEn: 'Vivekananthan Homeopathy Clinic',
-    clinicNameTa: 'விவேகானந்தன் ஹோமியோபதி கிளினிக்',
+    clinicNameEn: 'Dr.Vivekananthan Homeopathy Clinic',
+    clinicNameTa: 'Dr.விவேகானந்தன் ஹோமியோபதி கிளினிக்',
     themeColor: 'sapphire',
     doctorImage: '/doctor-vivekananthan.jpg',
     showDoctorForefront: true,
-    mapsUrl: 'https://maps.google.com/?q=Vivekananthan+Homeopathy+Clinic+39/24+Ganapathi+Nagar+Amma+Iyer+Kulam+Park+near+R.S.+Road+Perundurai+638052+Erode+District+Tamil+Nadu'
+    mapsUrl: 'https://maps.google.com/?q=Dr.Vivekananthan+Homeopathy+Clinic+39/24+Ganapathi+Nagar+Amma+Iyer+Kulam+Park+near+R.S.+Road+Perundurai+638052+Erode+District+Tamil+Nadu'
   }
 };
 

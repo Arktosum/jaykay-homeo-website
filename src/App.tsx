@@ -15,7 +15,9 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', profile.themeColor);
-  }, [profile.themeColor]);
+    // Always set document title in English as requested
+    document.title = `${profile.clinicNameEn} | Perundurai, Erode`;
+  }, [profile.themeColor, profile.clinicNameEn]);
 
   return (
     <LanguageProvider>
